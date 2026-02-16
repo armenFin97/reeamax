@@ -2,14 +2,7 @@
 (function() {
     'use strict';
     
-    // Track CTA button clicks (optional analytics)
-    const ctaButton = document.querySelector('.cta-button');
-    if (ctaButton) {
-        ctaButton.addEventListener('click', function() {
-            // Optional: Add analytics tracking here
-            console.log('CTA button clicked');
-        });
-    }
+    // Email button will open default mail client (no preventDefault)
     
     // Ensure proper focus management for accessibility
     document.addEventListener('DOMContentLoaded', function() {
@@ -21,7 +14,9 @@
         }
     });
     
-    // Ensure no scrolling on all devices
+    // Prevent all scrolling
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     document.body.style.height = '100vh';
+    document.documentElement.style.height = '100vh';
 })();
