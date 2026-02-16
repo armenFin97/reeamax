@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location (update when sitemap.xml is created)
+# Sitemap: https://reeamax.com/sitemap.xml
